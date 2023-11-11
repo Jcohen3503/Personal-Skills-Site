@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* Import Sarabun Font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* Centers all content horizontally */
+body {
+    font-family: 'Sarabun',sans-serif;
+    color: rgb(41, 41, 41);
+    background-color: whitesmoke;
+}
+
+.center {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(auto-fit,1fr);
+    grid-template-columns: auto-fit;
+    justify-items: center;
+    align-items: center;
+}
+
+h1.hero {
+    font-size: 70px;
+}
+
+
+
+.info-section {
+    padding: 50px;
+    width: 800px;
+}
+
+.center h3 {
+    font-size: 20px;
+   font-weight: 500;
+   padding: 20px;
+}
+
+.center h2 {            /* for titles of info-sections */
+    font-size: 30px;
+   font-weight: 600;
+   color: whitesmoke;
+   background-color: rgb(41, 41, 41);
+   padding: 4px 10px;
+}
+.name-container {
+    grid-row-start: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center h3.majors-statement{
+    font-size: 20px;
+   font-weight: 500;
+   margin: 30px 0;
+   padding: 20px;
+}
+
+@keyframes ECSUColors {
+    0% {background-color: rgba(128, 0, 0, 0.724);}
+    100% {background-color: rgba(0, 0, 85, 0.712);}
+}
+
+section .ECSU {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 12px 18px;
+    animation: ECSUColors 4s infinite;
+    animation-play-state: running;
+    border-radius: 3px;
+    color: whitesmoke;
+    margin-top: 20px;
+}
+
+section a {
+    text-decoration: none;
+}
+.edu-container {
+    border-top: 2px solid #9e9e9e;
+    grid-row-start: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.majors-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,1fr);
+    grid-template-rows: 1;
+    gap: 20px;
+    justify-items: center ;
+    align-content: center;
+}
+
+.majors-container img {
+width: 150px;
+}
+
+.mc-1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.mc-2 {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.skills-container {
+    border-top: 2px solid #9e9e9e;
+    grid-row-start: 3;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-section:hover {
+    width: 100%;
+    box-shadow: 1px 0px 4px 1px #0c0c0c38 ;
+}
+
+#skills-label {
+    
+}
+
+.skills-sub-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,1fr);
+    grid-template-rows: 1fr;
+    align-content: center;
+    justify-items: center;
+    gap: 40px;
+}
+.ssc img {
+    height: 120px;
+    opacity: 70%;
+}
+
+.ssc {
+    width: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ssc-1 {
+    grid-column-start: 1;
+}
+.ssc-2 {
+grid-column-start: 2;
+}
+.ssc-3 {
+    grid-column-start: 3;
+}
+
+footer {
+    padding-top: 10px ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #9e9e9e;
+    background-color: lightgray;
+
+}
+footer .social-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    
+} 
+
+footer img {
+width: 90px;
+max-height: 80px;
+
+}
+
+footer h3 {
+    font-weight: 500;
+    margin-bottom: 5px;
+
+}
