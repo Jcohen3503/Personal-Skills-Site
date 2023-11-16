@@ -1,3 +1,7 @@
+html {
+    font-size: 18px;
+}
+
 * {
     margin: 0;
     padding: 0%;
@@ -23,13 +27,14 @@ body {
 }
 
 h1.hero {
-    font-size: 70px;
+    font-size: 4rem;
 }
 
 
 
 .info-section {
     padding: 50px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,13 +43,13 @@ h1.hero {
     
 
 .center h3 {
-    font-size: 20px;
+    font-size: 1rem;
    font-weight: 500;
    padding: 20px;
 }
 
 .center h2 {            /* for titles of info-sections */
-    font-size: 30px;
+    font-size: 1.75rem;
    font-weight: 600;
    color: whitesmoke;
    background-color: rgb(41, 41, 41);
@@ -59,12 +64,13 @@ h1.hero {
 }
 
 .center h3.majors-statement{
-    font-size: 20px;
+    font-size: 1.2rem;
    font-weight: 500;
    margin: 30px 0;
    padding: 20px;
 }
 
+/* Animation for eastern */
 @keyframes ECSUColors {
     0% {background-color: rgba(128, 0, 0, 0.724);}
     100% {background-color: rgba(0, 0, 85, 0.712);}
@@ -81,20 +87,6 @@ section .ECSU {
     margin-top: 20px;
 }
 
-@media screen and (max-width: 768px){
-    .info-section{
-        width: 1em;
-    }
-    .center h3.majors-statement {
-        font-size: 18px;
-        width: 300px;
-        text-align: center;
-    }
-    section .ECSU {
-        font-size: 16px;
-        width: 220px;
-    }
-}
 
 section a {
     text-decoration: none;
@@ -138,6 +130,7 @@ width: 150px;
     width: 100%;
     background-color: rgb(253, 253, 253);
     box-shadow: 1px 0px 4px 1px #0c0c0c38 ;
+    cursor: pointer;
 }
 
 #skills-label {
@@ -150,8 +143,10 @@ width: 150px;
     grid-template-rows: 1fr;
     align-content: center;
     justify-items: center;
-    gap: 40px;
+    gap: 60px;
+    margin-top: 10px;
 }
+
 .ssc img {
     height: 120px;
     opacity: 70%;
@@ -174,6 +169,48 @@ grid-column-start: 2;
 .ssc-3 {
     grid-column-start: 3;
 }
+
+.acc-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.acc-content {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    background-color: rgb(214, 214, 214);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .8s;
+}
+
+.acc-container.active .acc-content {
+    height: 150px;
+}
+
+.acc-content p {
+    width: 60%;
+}
+
+
+
+
+/* Portfolio Section */
+.portfolio-container h2{
+    margin-bottom: 40px;
+}
+.portfolio-container:hover, .name-container:hover {
+    cursor: default;
+}
+
 .project-container{
     display: grid;
     grid-template-rows: minmax(250px,1fr);
@@ -207,7 +244,7 @@ grid-column-start: 2;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    height: 100%;
     border-radius: 5px;
 }
 
@@ -286,4 +323,22 @@ footer h3 {
     font-weight: 500;
     margin-bottom: 5px;
 
+}
+
+@media (max-width: 768px){
+    section.center{
+        width: 1.5rem;
+    }
+    .info-section{
+        width:2rem;
+    }
+    .center h3.majors-statement {
+        font-size: 1rem;
+        width: 300px;
+        text-align: center;
+    }
+    section .ECSU {
+        font-size: 1rem;
+        width: 220px;
+    }
 }
