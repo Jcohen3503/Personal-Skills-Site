@@ -206,6 +206,7 @@ grid-column-start: 2;
 
 .acc-content p {
     width: 60%;
+    height: 100px ; 
 }
 
 
@@ -366,7 +367,7 @@ footer h3 {
         gap: 15px;
         text-align: center;
     }
-    html {
-
+    .acc-content p {
+        font-size: .75rem;
     }
 }
