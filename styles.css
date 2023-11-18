@@ -108,8 +108,8 @@ section a {
 }
 
 .majors-container img {
-width: clamp(100px, 20vw, 200px);
-max-width: 100%;
+    width: clamp(50px, 20vw, 160px);
+    height: clamp(50px, 20vw, 160px);
 }
 
 .mc-1 {
@@ -146,14 +146,16 @@ max-width: 100%;
     justify-items: center;
     gap: 1rem;
     margin-top: 10px;
-    max-height: 200px;
+    max-height: 40%;
     padding: 2rem 0;
 }
 
 .ssc img {
-    height: 120px;
-    opacity: 70%;
+    width: clamp(50px, 20vw, 160px);
+    height: clamp(50px, 20vw, 160px);
+    max-height: 100%;
     max-width: 100%;
+    opacity: 70%;
 }
 
 .ssc {
